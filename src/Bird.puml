@@ -1,0 +1,10 @@
+@startuml
+
+class Bird {
+    + name : String
+    + color : String
+    + speak() : void
+    + fly() : void
+}
+
+@enduml
