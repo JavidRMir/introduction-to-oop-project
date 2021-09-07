@@ -1,6 +1,6 @@
 @startuml
 
-class Bird {
+abstract class Bird {
     + name : String
     + color : String
     + speak() : void
@@ -13,5 +13,18 @@ class Pigeon {
 }
 
 Bird <|-- Pigeon
+
+class Penguin {
+    + speak() : void
+    + fly() : void
+}
+
+Bird <|-- Penguin
+
+class Parrot {
+    + speak() : void
+}
+
+Bird <|-- Parrot
 
 @enduml
