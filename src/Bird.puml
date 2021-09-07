@@ -1,8 +1,8 @@
 @startuml
 
 abstract class Bird {
-    + name : String
-    + color : String
+    # name : String
+    # color : String
     + speak() : void
     + fly() : void
 }
@@ -26,5 +26,13 @@ class Parrot {
 }
 
 Bird <|-- Parrot
+
+interface DanceImpl {
+    + spin() : void
+    + doTheCaterpillar() : void
+    + jump() : void
+}
+
+Bird ..|> DanceImpl
 
 @enduml
